@@ -37,4 +37,10 @@
 			callback(response);
 		};
 		
+		rollDice = function(maxValue) {
+			var value = Math.floor(Math.random()*(maxValue)) + 1
+			$('#diceValue').text(value)
+			$('#diceModal').modal('show')
+		}
+		
 })(jQuery);

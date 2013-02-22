@@ -74,10 +74,10 @@
 			<div class="row-fluid">
 				<div class="span9 well">
 					<ul>
-						<li class="k1"><a href="#">K1</a></li>
-						<li class="k2"><a href="#">K2</a></li>
-						<li class="k3"><a href="#">K3</a></li>
-						<li class="k4"><a href="#">K4</a></li>
+						<li class="k4"><a href="#" onclick="rollDice(4)">K4</a></li>
+						<li class="k6"><a href="#" onclick="rollDice(6)">K6</a></li>
+						<li class="k8"><a href="#" onclick="rollDice(8)">K8</a></li>
+						<li class="k10"><a href="#" onclick="rollDice(10)">K10</a></li>
 					</ul>
 				</div>
 				<div id="log-container" class="span3 well">
@@ -85,6 +85,14 @@
 				</div>
 			</div>
 		</div>
+
+		<div id="diceModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="diceModalLabel" aria-hidden="true">
+			<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+				<h3 id="myModalLabel">Outcome: <span id="diceValue"/> </h3>
+			</div>
+		</div>
+
 		<script src="http://code.jquery.com/jquery.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/script.js"></script>

@@ -1,7 +1,7 @@
 EclipsePhaseBattleManager
 =========================
 
-Eclipse Phase battle manager
+Eclipse Phase battle manager - https://ep-battle-manager.eu01.aws.af.cm/ (development snapshot)
 
 ![OverviewSequenceDiagram](https://raw.github.com/jakubnabrdalik/EclipsePhaseBattleManager/master/art/sci_fi_soldier_by_vixis24m-d4uewj0.jpg)
 [Art by vixis24m http://vixis24m.deviantart.com/]

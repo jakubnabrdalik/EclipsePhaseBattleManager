@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>EclipsePhaseBattleManager</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		 <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
+		<link href="stylesheets/screen.css" rel="stylesheet" media="screen">
+	</head>
+	<body>
+		<h1>EclipsePhaseBattleManager</h1>
+		
+		<div class="navbar">
+		<div class="navbar-inner">
+		<div class="container-fluid">
+		<ul class="nav">
+			<li><a href="#">Nowa Gra</a></li>
+			<li><a href="#">Dodaj Gracza</a></li>
+			<li><a href="#">Wyjdz z gry</a></li>
+		</ul>
+		</div>
+		</div>
+		</div>
+		
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<div id="table-container" class="span9 well">
+					<ul class="characters">
+						<li class="character-1">
+							<span class="name">First</span>
+							<span class="hp">
+								<span class="curr">60</span>/<span class="max">100</span>
+								<span class="progress-bar">
+									<span></span>
+								</span>
+							</span>
+						</li>
+						<li class="character-2">
+							<span class="name">Second</span>
+							<span class="hp">
+								<span class="curr">60</span>/<span class="max">100</span>
+								<span class="progress-bar">
+									<span></span>
+								</span>
+							</span>
+						</li>
+						<li class="character-3">
+							<span class="name">Trzeci</span>
+							<span class="hp">
+								<span class="curr">60</span>/<span class="max">100</span>
+								<span class="progress-bar">
+									<span></span>
+								</span>
+							</span>
+						</li>
+						<li class="character-4">
+							<span class="name">Czwarty</span>
+							<span class="hp">
+								<span class="curr">60</span>/<span class="max">100</span>
+								<span class="progress-bar">
+									<span></span>
+								</span>
+							</span>
+						</li>
+					</ul>
+				</div>
+				<div id="log-container" class="span3 well">
+					<ul>
+						<li>log</li>
+						<li>log</li>
+						<li>log</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div class="span9 well">
+					<ul>
+						<li class="k4"><a href="#" onclick="rollDice(4)">K4</a></li>
+						<li class="k6"><a href="#" onclick="rollDice(6)">K6</a></li>
+						<li class="k8"><a href="#" onclick="rollDice(8)">K8</a></li>
+						<li class="k10"><a href="#" onclick="rollDice(10)">K10</a></li>
+					</ul>
+				</div>
+				<div id="log-container" class="span3 well">
+					something
+				</div>
+			</div>
+		</div>
+
+		<div id="diceModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="diceModalLabel" aria-hidden="true">
+			<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+				<h3 id="myModalLabel">Outcome: <span id="diceValue"/> </h3>
+			</div>
+		</div>
+
+		<script id="character-template" type="text/template">
+			<li class="character-{character_id}">
+				<span class="name">{character_name}</span>
+				<span class="hp">
+					<span class="curr">{character_hp}</span>/<span class="max">100</span>
+					<span class="progress-bar">
+						<span style="width: {character_hp}%"></span>
+					</span>
+				</span>
+			</li>
+		</script>
+		
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<g:javascript src="bootstrap.min.js" />
+		<g:javascript src="script.js" />
+	</body>
+</html>

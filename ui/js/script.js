@@ -21,10 +21,13 @@
 			/*
 				oportunity: {
 					question: "Do something!"
-					responseKey1: 'Run!',
-					responseKey2: 'Fight!',
-					responseKey3: 'Say: Lalala!'
-				}
+					responses: {
+					{ name: 'Run!',
+					  id: '1'},
+					{ name: 'Fight!',
+					 id: 2 },
+					{ name: 'Say: Lalala!',
+					 id: 3 }
 			*/
 			// pokaż popup z pytaniem i odpowiedziami
 			

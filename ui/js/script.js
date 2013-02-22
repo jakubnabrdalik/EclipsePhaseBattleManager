@@ -1,15 +1,33 @@
 (function ($) {
 	
-	var host = '',
+	var host = 'https://ep-battle-manager.eu01.aws.af.cm/rest/game',
 		urls = {
 			listAll: '/listAll',
 			list: '/list/{query}',
 			attack: '/attack',
-			update: '/update'
+			update: '/update',
+			gameState: '/state'
 		},
 		sampleSate = {"playerCharacters":[{"class":"game.PlayerCharacter","id":1,"armourPoints":3,"hp":50,"initialInitative":7,"name":"Zenek","skillLevels":[{"class":"SkillLevel","id":4},{"class":"SkillLevel","id":1}],"weapons":[{"class":"Weapon","id":1}]}],"nonPlayerCharacters":[{"class":"game.NonPlayerCharacter","id":2,"armourPoints":1,"hp":30,"initialInitative":3,"name":"Policeman1","skillLevels":[{"class":"SkillLevel","id":2},{"class":"SkillLevel","id":4}],"weapons":[{"class":"Weapon","id":1}]}]},
 		$tableContainer = $('#table-container'),
 		$logsContainer = $('#log-container'),
+		
+		
+		init = function ()
+		{
+			var init_state;
+			
+			$.ajax({
+				url: host + urls.gameState,
+				dataType: 'json',
+				success: function (response)
+				{
+					updateGameState(response);
+				}
+			});
+			
+			// updateGameState(sampleSate);
+		},
 		
 		updateGameState = function(gameState, callback)
 		{
@@ -80,5 +98,5 @@
 			$('#diceModal').modal('show')
 		}
 		
-		updateGameState(sampleSate);
+		init();
 })(jQuery);

@@ -93,6 +93,18 @@
 			</div>
 		</div>
 
+		<script id="character-template" type="text/template">
+			<li class="character-{character_id}">
+				<span class="name">{character_name}</span>
+				<span class="hp">
+					<span class="curr">{character_hp}</span>/<span class="max">100</span>
+					<span class="progress-bar">
+						<span style="width: {character_hp}%"></span>
+					</span>
+				</span>
+			</li>
+		</script>
+		
 		<script src="http://code.jquery.com/jquery.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/script.js"></script>

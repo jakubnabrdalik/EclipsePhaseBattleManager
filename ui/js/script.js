@@ -9,7 +9,7 @@
 		},
 		sampleSate = {"playerCharacters":[{"class":"game.PlayerCharacter","id":1,"armourPoints":3,"hp":50,"initialInitative":7,"name":"Zenek","skillLevels":[{"class":"SkillLevel","id":4},{"class":"SkillLevel","id":1}],"weapons":[{"class":"Weapon","id":1}]}],"nonPlayerCharacters":[{"class":"game.NonPlayerCharacter","id":2,"armourPoints":1,"hp":30,"initialInitative":3,"name":"Policeman1","skillLevels":[{"class":"SkillLevel","id":2},{"class":"SkillLevel","id":4}],"weapons":[{"class":"Weapon","id":1}]}]},
 		$tableContainer = $('#table-container'),
-		$logsContainer =$('#log-container'),
+		$logsContainer = $('#log-container'),
 		
 		updateGameState = function(gameState, callback)
 		{
@@ -30,8 +30,8 @@
 				$tableContainer.append(template(
 					$characterTemplate.html(), 
 					{
-						'{character_name}': characters[0].name,
-						'{character_hp}': characters[0].hp
+						'{character_name}': characters[i].name,
+						'{character_hp}': characters[i].hp
 					}
 				));
 			}

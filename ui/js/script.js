@@ -31,7 +31,7 @@
 			*/
 			// pokaż popup z pytaniem i odpowiedziami
 			
-			
+			// 
 			
 			callback(response);
 		};

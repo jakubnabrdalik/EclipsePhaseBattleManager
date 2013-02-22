@@ -3,3 +3,7 @@
 *.idea
 grails/out
 
+
+# eclipse
+.classpath
+.project

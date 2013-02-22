@@ -7,6 +7,8 @@ class UrlMappings {
 			}
 		}
 
+        "/rest/game/state" (controller: "stateOfGame", action: 'state')
+
 		"/"(view:"/index")
 		"500"(view:'/error')
 	}

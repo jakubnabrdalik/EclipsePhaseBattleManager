@@ -21,13 +21,14 @@
 			/*
 				oportunity: {
 					question: "Do something!"
-					responses: {
-					{ name: 'Run!',
-					  id: '1'},
-					{ name: 'Fight!',
-					 id: 2 },
-					{ name: 'Say: Lalala!',
-					 id: 3 }
+					responses: [
+						{ name: 'Run!',
+						  id: '1'},
+						{ name: 'Fight!',
+						 id: 2 },
+						{ name: 'Say: Lalala!',
+						 id: 3 }
+					]
 			*/
 			// pokaż popup z pytaniem i odpowiedziami
 			
